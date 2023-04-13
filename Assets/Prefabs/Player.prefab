@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 6084337054075075331}
   - component: {fileID: 6084337054075075328}
   - component: {fileID: 6084337054075075329}
-  - component: {fileID: 6084337054075075330}
   m_Layer: 0
   m_Name: Cone (1)
   m_TagString: Untagged
@@ -27,8 +26,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6084337054075075332}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.2599998, y: 0, z: 1.0000001}
-  m_LocalScale: {x: 1.2, y: 1.2, z: 1.1999998}
+  m_LocalPosition: {x: 2.24, y: 0, z: 1.0000001}
+  m_LocalScale: {x: 1.01, y: 1.01, z: 1.4}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 6084337056089220181}
@@ -84,19 +83,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &6084337054075075330
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6084337054075075332}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &6084337054102855705
 GameObject:
   m_ObjectHideFlags: 0
@@ -108,7 +94,6 @@ GameObject:
   - component: {fileID: 6084337054102855704}
   - component: {fileID: 6084337054102855685}
   - component: {fileID: 6084337054102855686}
-  - component: {fileID: 6084337054102855687}
   m_Layer: 0
   m_Name: Wing (2)
   m_TagString: Untagged
@@ -181,19 +166,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &6084337054102855687
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6084337054102855705}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &6084337054343021806
 GameObject:
   m_ObjectHideFlags: 0
@@ -205,7 +177,6 @@ GameObject:
   - component: {fileID: 6084337054343021805}
   - component: {fileID: 6084337054343021802}
   - component: {fileID: 6084337054343021803}
-  - component: {fileID: 6084337054343021804}
   m_Layer: 0
   m_Name: Wing
   m_TagString: Untagged
@@ -278,19 +249,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &6084337054343021804
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6084337054343021806}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &6084337054486234675
 GameObject:
   m_ObjectHideFlags: 0
@@ -300,6 +258,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6084337054486234674}
+  - component: {fileID: 6084337054806801913}
+  - component: {fileID: 6084337054806801915}
+  - component: {fileID: 6084337054806801916}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -323,6 +284,51 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!54 &6084337054806801913
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6084337054486234675}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 84
+  m_CollisionDetection: 0
+--- !u!114 &6084337054806801915
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6084337054486234675}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62df161f17018fa41948bb41e10837d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  force: 20
+  drag: 0.5
+  rotationSpeed: 10
+  angularDrag: 0.5
+--- !u!65 &6084337054806801916
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6084337054486234675}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 5.6, y: 1, z: 8.08}
+  m_Center: {x: 0, y: 0, z: 1.27}
 --- !u!1 &6084337054536697048
 GameObject:
   m_ObjectHideFlags: 0
@@ -334,7 +340,6 @@ GameObject:
   - component: {fileID: 6084337054536697031}
   - component: {fileID: 6084337054536697028}
   - component: {fileID: 6084337054536697029}
-  - component: {fileID: 6084337054536697030}
   m_Layer: 0
   m_Name: Cockpit
   m_TagString: Untagged
@@ -351,7 +356,7 @@ Transform:
   m_GameObject: {fileID: 6084337054536697048}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.00999999, y: 0.76, z: -0.059999943}
-  m_LocalScale: {x: 0.8, y: 0.8, z: 1.5}
+  m_LocalScale: {x: 1, y: 0.5, z: 1.5}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 6084337056089220181}
@@ -407,19 +412,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &6084337054536697030
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6084337054536697048}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &6084337054692012340
 GameObject:
   m_ObjectHideFlags: 0
@@ -431,7 +423,6 @@ GameObject:
   - component: {fileID: 6084337054692012339}
   - component: {fileID: 6084337054692012336}
   - component: {fileID: 6084337054692012337}
-  - component: {fileID: 6084337054692012338}
   m_Layer: 0
   m_Name: Wing (1)
   m_TagString: Untagged
@@ -504,19 +495,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &6084337054692012338
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6084337054692012340}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &6084337054851555056
 GameObject:
   m_ObjectHideFlags: 0
@@ -528,7 +506,6 @@ GameObject:
   - component: {fileID: 6084337054851555071}
   - component: {fileID: 6084337054851555068}
   - component: {fileID: 6084337054851555069}
-  - component: {fileID: 6084337054851555070}
   m_Layer: 0
   m_Name: Cone
   m_TagString: Untagged
@@ -545,7 +522,7 @@ Transform:
   m_GameObject: {fileID: 6084337054851555056}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -2.24, y: 0, z: 1}
-  m_LocalScale: {x: 1.2, y: 1.2, z: 1.2}
+  m_LocalScale: {x: 1.01, y: 1.01, z: 1.4}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 6084337056089220181}
@@ -601,19 +578,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &6084337054851555070
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6084337054851555056}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &6084337055080868255
 GameObject:
   m_ObjectHideFlags: 0
@@ -625,7 +589,6 @@ GameObject:
   - component: {fileID: 6084337055080868254}
   - component: {fileID: 6084337055080868251}
   - component: {fileID: 6084337055080868252}
-  - component: {fileID: 6084337055080868253}
   m_Layer: 0
   m_Name: Body
   m_TagString: Untagged
@@ -642,7 +605,7 @@ Transform:
   m_GameObject: {fileID: 6084337055080868255}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0.82000005}
-  m_LocalScale: {x: 1, y: 1, z: 5}
+  m_LocalScale: {x: 1.5, y: 1, z: 5}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 6084337056089220181}
@@ -698,19 +661,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &6084337055080868253
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6084337055080868255}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &6084337055117694992
 GameObject:
   m_ObjectHideFlags: 0
@@ -722,7 +672,6 @@ GameObject:
   - component: {fileID: 6084337055117695007}
   - component: {fileID: 6084337055117695004}
   - component: {fileID: 6084337055117695005}
-  - component: {fileID: 6084337055117695006}
   m_Layer: 0
   m_Name: Wing (3)
   m_TagString: Untagged
@@ -795,19 +744,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &6084337055117695006
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6084337055117694992}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &6084337055463032900
 GameObject:
   m_ObjectHideFlags: 0
@@ -819,7 +755,6 @@ GameObject:
   - component: {fileID: 6084337055463032899}
   - component: {fileID: 6084337055463032896}
   - component: {fileID: 6084337055463032897}
-  - component: {fileID: 6084337055463032898}
   m_Layer: 0
   m_Name: Nose
   m_TagString: Untagged
@@ -835,8 +770,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6084337055463032900}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 4.16}
-  m_LocalScale: {x: 1, y: 1, z: 1.7}
+  m_LocalPosition: {x: 0, y: 0, z: 4.32}
+  m_LocalScale: {x: 1.5, y: 1, z: 2}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 6084337056089220181}
@@ -892,19 +827,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &6084337055463032898
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6084337055463032900}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &6084337056089220182
 GameObject:
   m_ObjectHideFlags: 0
