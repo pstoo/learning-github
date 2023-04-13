@@ -5,6 +5,8 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
+    private int timesCollided = 0;
+
     [Header("Speed")]
     [SerializeField] private float force = 10;
     [SerializeField] private float drag = 0.5f;
@@ -23,6 +25,20 @@ public class PlayerController : MonoBehaviour
         rb = GetComponent<Rigidbody>();
     }
 
+    private void OnCollisionEnter(Collision other) {
+        if (other.gameObject.tag == "Obstacle")
+        {
+            timesCollided++;
+            if (timesCollided > 1)
+            {
+                Debug.Log("You collided with an obstacle " + timesCollided + " times.");
+            }
+            else 
+            {
+                Debug.Log("You collided with an obstacle " + timesCollided + " time.");
+            }
+        }    
+    }
 
     void FixedUpdate()
     {
